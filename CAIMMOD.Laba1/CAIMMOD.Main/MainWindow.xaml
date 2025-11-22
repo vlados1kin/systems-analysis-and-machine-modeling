@@ -15,13 +15,13 @@
 
         <Border Grid.Column="0">
             <StackPanel>
-                <TextBlock Text="Алгоритм Лемера" FontSize="18" FontWeight="Bold" Margin="2,0,0,8"/>
-                <TextBlock Text="Параметры генератора (LCG)" FontWeight="Bold" Margin="0,4,0,8"/>
+                <TextBlock Text="Алгоритм Лемера" FontSize="18" FontWeight="Bold" Margin="2,0,0,8" />
+                <TextBlock Text="Параметры генератора (LCG)" FontWeight="Bold" Margin="0,4,0,8" />
 
                 <StackPanel Orientation="Vertical" Margin="0,4">
                     <StackPanel Orientation="Horizontal" Margin="0,4">
                         <TextBlock Width="90" VerticalAlignment="Center">x0:</TextBlock>
-                        <TextBox x:Name="SeedBox" Text="123456789" Width="180"/>
+                        <TextBox x:Name="SeedBox" Text="123456789" Width="180" />
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Margin="0,4">
                         <TextBlock Width="90" VerticalAlignment="Center">a:</TextBlock>
@@ -37,7 +37,7 @@
                     </StackPanel>
                 </StackPanel>
 
-                <TextBlock Text="Выборка и тесты" FontWeight="Bold" Margin="0,12,0,6"/>
+                <TextBlock Text="Выборка и тесты" FontWeight="Bold" Margin="0,12,0,6" />
                 <StackPanel Orientation="Horizontal" Margin="0,4">
                     <TextBlock Width="90" VerticalAlignment="Center">Размер n:</TextBlock>
                     <TextBox x:Name="NBox" Text="10000" Width="120" />
@@ -49,12 +49,12 @@
 
                 <Button x:Name="GenerateBtn" Content="Сгенерировать и показать" Margin="0,10,0,0" Click="GenerateBtn_Click" />
 
-                <TextBlock Text="Результаты тестов" FontWeight="Bold" Margin="0,12,0,6"/>
-                <TextBlock x:Name="ChiResult" TextWrapping="Wrap" Margin="0,2"/>
-                <TextBlock x:Name="KsResult" TextWrapping="Wrap" Margin="0,2"/>
+                <TextBlock Text="Результаты тестов" FontWeight="Bold" Margin="0,12,0,6" />
+                <TextBlock x:Name="ChiResult" TextWrapping="Wrap" Margin="0,2" />
+                <TextBlock x:Name="KsResult" TextWrapping="Wrap" Margin="0,2" />
 
-                <TextBlock Text="Вывод" FontWeight="Bold" Margin="0,12,0,6"/>
-                <TextBlock x:Name="Conclusion" TextWrapping="Wrap" Margin="0,2"/>
+                <TextBlock Text="Вывод" FontWeight="Bold" Margin="0,12,0,6" />
+                <TextBlock x:Name="Conclusion" TextWrapping="Wrap" Margin="0,2" />
             </StackPanel>
         </Border>
 

@@ -5,28 +5,26 @@
         Title="Лабораторная работа №4" Height="750" Width="1100">
     <Grid Margin="10">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Column="0" Margin="0,0,10,0">
-            <TextBlock Text="Задачи эксперимента" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
-            
-            <Button Content="1. Аппроксимация (7+ уровней)" Click="BtnTask1_Approximation_Click" Margin="0,5" Height="35"/>
-            <Button Content="2. Граница устойчивости (Отказы)" Click="BtnTask2_Stability_Click" Margin="0,5" Height="35"/>
-            <Button Content="3. Сравнение альтернатив" Click="BtnTask3_Comparison_Click" Margin="0,5" Height="35"/>
-            <Button Content="4. Двухфакторный эксперимент" Click="BtnTask4_TwoFactor_Click" Margin="0,5" Height="35"/>
-            
-            <Separator Margin="0,10"/>
-            <TextBlock Text="Лог эксперимента:" FontWeight="Bold"/>
-            <TextBox Name="TxtLog" Height="400" TextWrapping="Wrap" 
-                     VerticalScrollBarVisibility="Auto" IsReadOnly="True" 
-                     FontFamily="Consolas" FontSize="11" Margin="0,5,0,0"/>
+            <TextBlock Text="Задачи эксперимента" FontWeight="Bold" FontSize="16" Margin="0,0,0,10" />
+
+            <Button Content="1. Аппроксимация (7+ уровней)" Click="BtnTask1_Approximation_Click" Margin="0,5" Height="35" />
+            <Button Content="2. Граница устойчивости (Отказы)" Click="BtnTask2_Stability_Click" Margin="0,5" Height="35" />
+            <Button Content="3. Сравнение альтернатив" Click="BtnTask3_Comparison_Click" Margin="0,5" Height="35" />
+            <Button Content="4. Двухфакторный эксперимент" Click="BtnTask4_TwoFactor_Click" Margin="0,5" Height="35" />
+
+            <Separator Margin="0,10" />
+            <TextBlock Text="Лог эксперимента:" FontWeight="Bold" />
+            <TextBox Name="TxtLog" Height="400" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" IsReadOnly="True" FontFamily="Consolas" FontSize="11" Margin="0,5,0,0" />
         </StackPanel>
 
-        <GridSplitter Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Stretch" Width="3" ShowsPreview="False"/>
-        
-        <oxy:PlotView Name="ExpPlotView" Grid.Column="2" Margin="5" Foreground="Black"/>
+        <GridSplitter Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Stretch" Width="3" ShowsPreview="False" />
+
+        <oxy:PlotView Name="ExpPlotView" Grid.Column="2" Margin="5" Foreground="Black" />
     </Grid>
 </Window>
