@@ -6,9 +6,11 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <UseWPF>true</UseWPF>
+        <RootNamespace>CAIMMOD.Laba3</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
       <PackageReference Include="OxyPlot.Core" Version="2.2.0" />
       <PackageReference Include="OxyPlot.Wpf" Version="2.2.0" />
       <PackageReference Include="OxyPlot.Wpf.Shared" Version="2.2.0" />
