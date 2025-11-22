@@ -62,7 +62,10 @@ public partial class MainWindow
         AppendLog($"Запускаем серию из {runs} прогонов...");
         for (var i = 0; i < runs; i++)
         {
-            var sim = new DiscreteEventSimulation(pars, new Random(SimulationParameters.Seed + i), null);
+            var sim = new DiscreteEventSimulation(pars, new Random(SimulationParameters.Seed + i), txt =>
+            {
+                if (ChkTrace.IsChecked == true) AppendLog(txt);
+            });
             var r = sim.Run();
             results.Add(r);
             AppendLog($"Прогон {i + 1}/{runs}: среднее ожидание={r.AvgWaitingTime:F3} мин, загрузка={r.AvgUtilization:P3}, отказов={r.FractionLost:P3}");
